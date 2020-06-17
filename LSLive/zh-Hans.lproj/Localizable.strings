@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LSLive
+
+  Created by demo on 2020/5/5.
+  Copyright © 2020 ls. All rights reserved.
+*/
+"Home" = "主页";
+"LSLive" = "直播";
+"LSPlay" = "播放";
+

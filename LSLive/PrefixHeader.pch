@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  LSLive
+//
+//  Created by demo on 2020/5/5.
+//  Copyright © 2020 ls. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+ 
+ 
+#import "LSDispatcher.h"
+
+#define LSScreenWidth [UIScreen mainScreen].bounds.size.width
+#define LSScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#define kUDPBROADPORT 9898
+
+#define kTCPPORT 9999
+
+#define kUDPServerPort 9009
+
+
+#endif /* PrefixHeader_pch */

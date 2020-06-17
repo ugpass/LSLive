@@ -1,0 +1,24 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - GPUImage (0.1.7)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - GPUImage
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - GPUImage
+    - Masonry
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 6ee93199e3139140913cc41865d64cc35d4c3e7f
+
+COCOAPODS: 1.8.4

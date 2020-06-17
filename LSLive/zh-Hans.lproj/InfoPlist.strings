@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  LSLive
+
+  Created by demo on 2020/5/5.
+  Copyright © 2020 ls. All rights reserved.
+*/
+CFBundleDisplayName = "LSLive";
+"Whether to allow access to the camera" = "是否允许访问相机";
+"Whether to allow access to the microphone" = "是否允许访问麦克风";
