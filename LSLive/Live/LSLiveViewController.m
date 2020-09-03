@@ -8,6 +8,8 @@
 
 #import "LSLiveViewController.h"
 
+#import <MetalKit/MetalKit.h>
+
 #import "Masonry.h"
 
 //视频采集
@@ -27,6 +29,9 @@
 //音频编码
 #import "LSAudioEncoder.h"
 
+//Metal显示视图
+#import "LSMetalView.h"
+
 #import <GCDAsyncSocket.h>
 #import <GCDAsyncUdpSocket.h>
 
@@ -45,7 +50,7 @@
 
 @property (nonatomic, strong) GCDAsyncSocket *tcp;
 
-@property (nonatomic, strong) UIImageView *playerView;
+@property (nonatomic, strong) LSMetalView *playerView;
 
 @property (nonatomic, strong) LSVideoDecoder *videoDecoder;
 
@@ -82,13 +87,13 @@
     }]; 
     [_switchCameraBtn addTarget:self action:@selector(switchCamera) forControlEvents:UIControlEventTouchUpInside];
  
-    _playerView = [[UIImageView alloc] initWithFrame:CGRectZero];
-      [self.view addSubview:_playerView];
-      [_playerView mas_makeConstraints:^(MASConstraintMaker *make) {
-          make.top.left.mas_equalTo(@40);
-          make.width.mas_equalTo(@100);
-          make.height.mas_equalTo(@200);
-      }];
+    _playerView = [[LSMetalView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:_playerView];
+    [_playerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.mas_equalTo(@40);
+        make.width.mas_equalTo(@100);
+        make.height.mas_equalTo(@200);
+    }];
     
 }
 
@@ -237,12 +242,7 @@
     //render pixelBuffer
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-        CIContext *tempContext = [CIContext contextWithOptions:nil];
-        CGImageRef cgImage = [tempContext createCGImage:ciImage fromRect:CGRectMake(0, 0, CVPixelBufferGetWidth(pixelBuffer), CVPixelBufferGetHeight(pixelBuffer))];
-        weakSelf.playerView.image = [UIImage imageWithCGImage:cgImage];
-        CGImageRelease(cgImage);
-        
+        [weakSelf.playerView startRenderWithSamplerBuffer:pixelBuffer];
         CVPixelBufferRelease(pixelBuffer);
     });
     

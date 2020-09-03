@@ -37,15 +37,10 @@
 		E33CF6B1249656BA002C1776 /* LSAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E33CF6B0249656BA002C1776 /* LSAudioEncoder.m */; };
 		E33CF6B424965A3B002C1776 /* LSVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E33CF6B324965A3B002C1776 /* LSVideoEncoder.m */; };
 		E3AD6E86248CDDEC00A2D75F /* LSVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AD6E85248CDDEC00A2D75F /* LSVideoDecoder.m */; };
-		E3D19E47248F9488002A12B6 /* AAPLMetalRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E3B248F9488002A12B6 /* AAPLMetalRenderer.m */; };
-		E3D19E48248F9488002A12B6 /* AAPLShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E3D248F9488002A12B6 /* AAPLShaders.metal */; };
-		E3D19E49248F9488002A12B6 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E3F248F9488002A12B6 /* AAPLMathUtilities.m */; };
-		E3D19E4A248F9488002A12B6 /* AAPLOpenGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E41248F9488002A12B6 /* AAPLOpenGLRenderer.m */; };
-		E3D19E4B248F9488002A12B6 /* shaderTex2D.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E3D19E43248F9488002A12B6 /* shaderTex2D.fsh */; };
-		E3D19E4C248F9488002A12B6 /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E3D19E44248F9488002A12B6 /* shader.vsh */; };
-		E3D19E4D248F9488002A12B6 /* shaderTexRect.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E3D19E46248F9488002A12B6 /* shaderTexRect.fsh */; };
 		E3D19E5B249085E9002A12B6 /* LSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E5A249085E9002A12B6 /* LSDeviceInfo.m */; };
 		E3D19E7D249091C5002A12B6 /* LSTcp.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E7C249091C5002A12B6 /* LSTcp.m */; };
+		E3D38B872500CF7A00F0B9AA /* LSMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D38B862500CF7A00F0B9AA /* LSMetalView.m */; };
+		E3D38B892500EF0F00F0B9AA /* LSShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3D38B882500EF0F00F0B9AA /* LSShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,23 +103,15 @@
 		E33CF6B324965A3B002C1776 /* LSVideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSVideoEncoder.m; sourceTree = "<group>"; };
 		E3AD6E84248CDDEC00A2D75F /* LSVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSVideoDecoder.h; sourceTree = "<group>"; };
 		E3AD6E85248CDDEC00A2D75F /* LSVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSVideoDecoder.m; sourceTree = "<group>"; };
-		E3D19E3A248F9488002A12B6 /* AAPLShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLShaderTypes.h; sourceTree = "<group>"; };
-		E3D19E3B248F9488002A12B6 /* AAPLMetalRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMetalRenderer.m; sourceTree = "<group>"; };
-		E3D19E3C248F9488002A12B6 /* AAPLMetalRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMetalRenderer.h; sourceTree = "<group>"; };
-		E3D19E3D248F9488002A12B6 /* AAPLShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = AAPLShaders.metal; sourceTree = "<group>"; };
-		E3D19E3E248F9488002A12B6 /* AAPLMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
-		E3D19E3F248F9488002A12B6 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
-		E3D19E41248F9488002A12B6 /* AAPLOpenGLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLOpenGLRenderer.m; sourceTree = "<group>"; };
-		E3D19E42248F9488002A12B6 /* AAPLGLHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLGLHeaders.h; sourceTree = "<group>"; };
-		E3D19E43248F9488002A12B6 /* shaderTex2D.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderTex2D.fsh; sourceTree = "<group>"; };
-		E3D19E44248F9488002A12B6 /* shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
-		E3D19E45248F9488002A12B6 /* AAPLOpenGLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLOpenGLRenderer.h; sourceTree = "<group>"; };
-		E3D19E46248F9488002A12B6 /* shaderTexRect.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderTexRect.fsh; sourceTree = "<group>"; };
 		E3D19E59249085E9002A12B6 /* LSDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDeviceInfo.h; sourceTree = "<group>"; };
 		E3D19E5A249085E9002A12B6 /* LSDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSDeviceInfo.m; sourceTree = "<group>"; };
 		E3D19E7B249091C5002A12B6 /* LSTcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSTcp.h; sourceTree = "<group>"; };
 		E3D19E7C249091C5002A12B6 /* LSTcp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSTcp.m; sourceTree = "<group>"; };
 		E3D19E7E2491C64B002A12B6 /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		E3D38B852500CF7A00F0B9AA /* LSMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMetalView.h; sourceTree = "<group>"; };
+		E3D38B862500CF7A00F0B9AA /* LSMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSMetalView.m; sourceTree = "<group>"; };
+		E3D38B882500EF0F00F0B9AA /* LSShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LSShader.metal; sourceTree = "<group>"; };
+		E3D38B8A2500EF4B00F0B9AA /* LSShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSShaderType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,36 +342,9 @@
 		E3D19E38248F9488002A12B6 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
-				E3D19E39248F9488002A12B6 /* Metal */,
-				E3D19E3E248F9488002A12B6 /* AAPLMathUtilities.h */,
-				E3D19E3F248F9488002A12B6 /* AAPLMathUtilities.m */,
-				E3D19E40248F9488002A12B6 /* OpenGL */,
+				E3D38B842500CF6600F0B9AA /* MetalView */,
 			);
 			path = Renderer;
-			sourceTree = "<group>";
-		};
-		E3D19E39248F9488002A12B6 /* Metal */ = {
-			isa = PBXGroup;
-			children = (
-				E3D19E3A248F9488002A12B6 /* AAPLShaderTypes.h */,
-				E3D19E3B248F9488002A12B6 /* AAPLMetalRenderer.m */,
-				E3D19E3C248F9488002A12B6 /* AAPLMetalRenderer.h */,
-				E3D19E3D248F9488002A12B6 /* AAPLShaders.metal */,
-			);
-			path = Metal;
-			sourceTree = "<group>";
-		};
-		E3D19E40248F9488002A12B6 /* OpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				E3D19E41248F9488002A12B6 /* AAPLOpenGLRenderer.m */,
-				E3D19E42248F9488002A12B6 /* AAPLGLHeaders.h */,
-				E3D19E43248F9488002A12B6 /* shaderTex2D.fsh */,
-				E3D19E44248F9488002A12B6 /* shader.vsh */,
-				E3D19E45248F9488002A12B6 /* AAPLOpenGLRenderer.h */,
-				E3D19E46248F9488002A12B6 /* shaderTexRect.fsh */,
-			);
-			path = OpenGL;
 			sourceTree = "<group>";
 		};
 		E3D19E51249069F7002A12B6 /* Udp */ = {
@@ -403,6 +363,17 @@
 				E3D19E7C249091C5002A12B6 /* LSTcp.m */,
 			);
 			path = Tcp;
+			sourceTree = "<group>";
+		};
+		E3D38B842500CF6600F0B9AA /* MetalView */ = {
+			isa = PBXGroup;
+			children = (
+				E3D38B852500CF7A00F0B9AA /* LSMetalView.h */,
+				E3D38B862500CF7A00F0B9AA /* LSMetalView.m */,
+				E3D38B882500EF0F00F0B9AA /* LSShader.metal */,
+				E3D38B8A2500EF4B00F0B9AA /* LSShaderType.h */,
+			);
+			path = MetalView;
 			sourceTree = "<group>";
 		};
 		E885A867A45DC8634BC2AD95 /* Pods */ = {
@@ -477,11 +448,8 @@
 			files = (
 				E3106C6A24619D9500A4E1C4 /* Localizable.strings in Resources */,
 				E3106C572461956200A4E1C4 /* LaunchScreen.storyboard in Resources */,
-				E3D19E4B248F9488002A12B6 /* shaderTex2D.fsh in Resources */,
 				E3106C6424619CA200A4E1C4 /* InfoPlist.strings in Resources */,
-				E3D19E4C248F9488002A12B6 /* shader.vsh in Resources */,
 				E3106C542461956200A4E1C4 /* Assets.xcassets in Resources */,
-				E3D19E4D248F9488002A12B6 /* shaderTexRect.fsh in Resources */,
 				E3106C522461955F00A4E1C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,17 +503,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D19E48248F9488002A12B6 /* AAPLShaders.metal in Sources */,
 				E3D19E5B249085E9002A12B6 /* LSDeviceInfo.m in Sources */,
-				E3D19E4A248F9488002A12B6 /* AAPLOpenGLRenderer.m in Sources */,
+				E3D38B892500EF0F00F0B9AA /* LSShader.metal in Sources */,
 				E3106D3E2464037B00A4E1C4 /* LSCameraPreviewView.m in Sources */,
 				E332D2ED24889575003F3D65 /* LSH264VideoEncoder.m in Sources */,
-				E3D19E49248F9488002A12B6 /* AAPLMathUtilities.m in Sources */,
 				E3106C8C24624DD600A4E1C4 /* LSVideoCapture.m in Sources */,
 				E3AD6E86248CDDEC00A2D75F /* LSVideoDecoder.m in Sources */,
 				E3106C4F2461955F00A4E1C4 /* ViewController.m in Sources */,
 				E3106C752461A19200A4E1C4 /* BaseViewController.m in Sources */,
 				E33CF6AE2496569A002C1776 /* LSAudioDecoder.m in Sources */,
+				E3D38B872500CF7A00F0B9AA /* LSMetalView.m in Sources */,
 				E33CF684249328C9002C1776 /* LSVideoCaptureConfiguration.m in Sources */,
 				E3106C822461AEB000A4E1C4 /* LSUdp.m in Sources */,
 				E33CF68A2493533C002C1776 /* LSAudioCaptureConfiguration.m in Sources */,
@@ -555,7 +522,6 @@
 				E33CF6B424965A3B002C1776 /* LSVideoEncoder.m in Sources */,
 				E3D19E7D249091C5002A12B6 /* LSTcp.m in Sources */,
 				E3106C7A2461A26200A4E1C4 /* LSPlayViewController.m in Sources */,
-				E3D19E47248F9488002A12B6 /* AAPLMetalRenderer.m in Sources */,
 				E3106C5A2461956200A4E1C4 /* main.m in Sources */,
 				E3106C7E2461A99600A4E1C4 /* LSAuthorityCheck.m in Sources */,
 				E33CF6872493532C002C1776 /* LSAudioCapture.m in Sources */,
@@ -725,6 +691,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR74QEN48H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LSLive/PrefixHeader.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = LSLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -745,6 +712,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR74QEN48H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LSLive/PrefixHeader.pch";
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = LSLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
