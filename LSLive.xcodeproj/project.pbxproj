@@ -323,6 +323,13 @@
 			path = H264VideoEncoder;
 			sourceTree = "<group>";
 		};
+		E36F578225022E3E0061100B /* OpenGLESView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OpenGLESView;
+			sourceTree = "<group>";
+		};
 		E3AD6E83248CDDDC00A2D75F /* VideoDecoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +349,7 @@
 		E3D19E38248F9488002A12B6 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
+				E36F578225022E3E0061100B /* OpenGLESView */,
 				E3D38B842500CF6600F0B9AA /* MetalView */,
 			);
 			path = Renderer;

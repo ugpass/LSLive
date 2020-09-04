@@ -243,7 +243,6 @@
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         [weakSelf.playerView startRenderWithSamplerBuffer:pixelBuffer];
-        CVPixelBufferRelease(pixelBuffer);
     });
     
 }
