@@ -206,6 +206,9 @@ NSString * const naluTypesStrings[] =
             break;
         case 0x07://SPS
             {
+                if (_sps) {
+                    return;
+                }
                 _spsSize = frameSize - 4;
                 _sps = malloc(_spsSize);
                 memcpy(_sps, &frame[4], _spsSize);
@@ -214,6 +217,9 @@ NSString * const naluTypesStrings[] =
             break;
         case 0x08://PPS
             {
+                if (_pps) {
+                    return;
+                }
                 _ppsSize = frameSize - 4;
                 _pps = malloc(_ppsSize);
                 memcpy(_pps, &frame[4], _ppsSize);
@@ -233,7 +239,14 @@ NSString * const naluTypesStrings[] =
     VTDecompressionSessionInvalidate(_mDecoderSession);
     CFRelease(mCMVideoFormatDescriptionRef);
     mCMVideoFormatDescriptionRef = NULL;
-    
+    if (_sps) {
+        free(_sps);
+        _sps = NULL;
+    }
+    if (_pps) {
+        free(_pps);
+        _pps = NULL;
+    }
 }
 
 static void decodeOutputDataCallback(void * CM_NULLABLE decompressionOutputRefCon,
@@ -245,7 +258,8 @@ static void decodeOutputDataCallback(void * CM_NULLABLE decompressionOutputRefCo
                               CMTime presentationDuration )
 {
     if (status != noErr) {
-        NSLog(@"%s error:%d", __func__, (int)status);
+        //decodeOutputDataCallback error:-12909
+//        NSLog(@"%s error:%d", __func__, (int)status);
         return;
     }
     CVPixelBufferRetain(imageBuffer);

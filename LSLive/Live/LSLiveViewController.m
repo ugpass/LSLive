@@ -32,6 +32,9 @@
 //Metal显示视图
 #import "LSMetalView.h"
 
+//OpenGL ES显示视图
+#import "LSOpenGLESView.h"
+
 #import <GCDAsyncSocket.h>
 #import <GCDAsyncUdpSocket.h>
 
@@ -50,7 +53,7 @@
 
 @property (nonatomic, strong) GCDAsyncSocket *tcp;
 
-@property (nonatomic, strong) LSMetalView *playerView;
+@property (nonatomic, strong) LSOpenGLESView *playerView;
 
 @property (nonatomic, strong) LSVideoDecoder *videoDecoder;
 
@@ -87,10 +90,11 @@
     }]; 
     [_switchCameraBtn addTarget:self action:@selector(switchCamera) forControlEvents:UIControlEventTouchUpInside];
  
-    _playerView = [[LSMetalView alloc] initWithFrame:CGRectZero];
+    _playerView = [[LSOpenGLESView alloc] initWithFrame:CGRectZero];
+    _playerView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_playerView];
     [_playerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.mas_equalTo(@40);
+        make.top.left.mas_equalTo(@80);
         make.width.mas_equalTo(@100);
         make.height.mas_equalTo(@200);
     }];

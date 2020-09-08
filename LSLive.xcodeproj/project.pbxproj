@@ -29,6 +29,7 @@
 		E3106D3E2464037B00A4E1C4 /* LSCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3106D3D2464037B00A4E1C4 /* LSCameraPreviewView.m */; };
 		E3106D41246407FC00A4E1C4 /* LSDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E3106D40246407FC00A4E1C4 /* LSDispatcher.m */; };
 		E3106D4F24653AE600A4E1C4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3106D4E24653AE500A4E1C4 /* CoreAudio.framework */; };
+		E332031625076C0600C1F297 /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E332031025076C0600C1F297 /* GLESUtils.m */; };
 		E332D2ED24889575003F3D65 /* LSH264VideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E332D2EC24889575003F3D65 /* LSH264VideoEncoder.m */; };
 		E33CF684249328C9002C1776 /* LSVideoCaptureConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E33CF683249328C9002C1776 /* LSVideoCaptureConfiguration.m */; };
 		E33CF6872493532C002C1776 /* LSAudioCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = E33CF6862493532C002C1776 /* LSAudioCapture.m */; };
@@ -41,6 +42,10 @@
 		E3D19E7D249091C5002A12B6 /* LSTcp.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D19E7C249091C5002A12B6 /* LSTcp.m */; };
 		E3D38B872500CF7A00F0B9AA /* LSMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D38B862500CF7A00F0B9AA /* LSMetalView.m */; };
 		E3D38B892500EF0F00F0B9AA /* LSShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E3D38B882500EF0F00F0B9AA /* LSShader.metal */; };
+		E3E9344725061569005E0C30 /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E3E9344625061569005E0C30 /* shaderv.vsh */; };
+		E3E9344925061575005E0C30 /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E3E9344825061575005E0C30 /* shaderf.fsh */; };
+		E3E9344C250615BB005E0C30 /* LSOpenGLESView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E9344B250615BB005E0C30 /* LSOpenGLESView.m */; };
+		E3E9344E25061B59005E0C30 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E9344D25061B59005E0C30 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +91,9 @@
 		E3106D40246407FC00A4E1C4 /* LSDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSDispatcher.m; sourceTree = "<group>"; };
 		E3106D462464D76B00A4E1C4 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		E3106D4E24653AE500A4E1C4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E332031025076C0600C1F297 /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		E332031325076C0600C1F297 /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		E33203192507841A00C1F297 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E332D2EB24889575003F3D65 /* LSH264VideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSH264VideoEncoder.h; sourceTree = "<group>"; };
 		E332D2EC24889575003F3D65 /* LSH264VideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSH264VideoEncoder.m; sourceTree = "<group>"; };
 		E33CF682249328C9002C1776 /* LSVideoCaptureConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSVideoCaptureConfiguration.h; sourceTree = "<group>"; };
@@ -112,6 +120,11 @@
 		E3D38B862500CF7A00F0B9AA /* LSMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSMetalView.m; sourceTree = "<group>"; };
 		E3D38B882500EF0F00F0B9AA /* LSShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LSShader.metal; sourceTree = "<group>"; };
 		E3D38B8A2500EF4B00F0B9AA /* LSShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSShaderType.h; sourceTree = "<group>"; };
+		E3E9344625061569005E0C30 /* shaderv.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		E3E9344825061575005E0C30 /* shaderf.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		E3E9344A250615BB005E0C30 /* LSOpenGLESView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSOpenGLESView.h; sourceTree = "<group>"; };
+		E3E9344B250615BB005E0C30 /* LSOpenGLESView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSOpenGLESView.m; sourceTree = "<group>"; };
+		E3E9344D25061B59005E0C30 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E9344E25061B59005E0C30 /* OpenGLES.framework in Frameworks */,
 				E3106D4F24653AE600A4E1C4 /* CoreAudio.framework in Frameworks */,
 				E3106CD72463A46600A4E1C4 /* VideoToolbox.framework in Frameworks */,
 				E3106CD32463A45800A4E1C4 /* CoreMedia.framework in Frameworks */,
@@ -134,6 +148,8 @@
 		CA0B7C46A8B86007CB14967D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E33203192507841A00C1F297 /* Foundation.framework */,
+				E3E9344D25061B59005E0C30 /* OpenGLES.framework */,
 				E3106D4E24653AE500A4E1C4 /* CoreAudio.framework */,
 				E3106D462464D76B00A4E1C4 /* AudioUnit.framework */,
 				E3106CD82463A46C00A4E1C4 /* AudioToolbox.framework */,
@@ -305,6 +321,15 @@
 			path = AudioCapture;
 			sourceTree = "<group>";
 		};
+		E332030F25076C0600C1F297 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E332031325076C0600C1F297 /* GLESUtils.h */,
+				E332031025076C0600C1F297 /* GLESUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E33CF6AB24965686002C1776 /* AudioDecoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +351,11 @@
 		E36F578225022E3E0061100B /* OpenGLESView */ = {
 			isa = PBXGroup;
 			children = (
+				E332030F25076C0600C1F297 /* Utils */,
+				E3E9344625061569005E0C30 /* shaderv.vsh */,
+				E3E9344825061575005E0C30 /* shaderf.fsh */,
+				E3E9344A250615BB005E0C30 /* LSOpenGLESView.h */,
+				E3E9344B250615BB005E0C30 /* LSOpenGLESView.m */,
 			);
 			path = OpenGLESView;
 			sourceTree = "<group>";
@@ -457,8 +487,10 @@
 				E3106C6A24619D9500A4E1C4 /* Localizable.strings in Resources */,
 				E3106C572461956200A4E1C4 /* LaunchScreen.storyboard in Resources */,
 				E3106C6424619CA200A4E1C4 /* InfoPlist.strings in Resources */,
+				E3E9344725061569005E0C30 /* shaderv.vsh in Resources */,
 				E3106C542461956200A4E1C4 /* Assets.xcassets in Resources */,
 				E3106C522461955F00A4E1C4 /* Main.storyboard in Resources */,
+				E3E9344925061575005E0C30 /* shaderf.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +545,7 @@
 			files = (
 				E3D19E5B249085E9002A12B6 /* LSDeviceInfo.m in Sources */,
 				E3D38B892500EF0F00F0B9AA /* LSShader.metal in Sources */,
+				E3E9344C250615BB005E0C30 /* LSOpenGLESView.m in Sources */,
 				E3106D3E2464037B00A4E1C4 /* LSCameraPreviewView.m in Sources */,
 				E332D2ED24889575003F3D65 /* LSH264VideoEncoder.m in Sources */,
 				E3106C8C24624DD600A4E1C4 /* LSVideoCapture.m in Sources */,
@@ -522,6 +555,7 @@
 				E33CF6AE2496569A002C1776 /* LSAudioDecoder.m in Sources */,
 				E3D38B872500CF7A00F0B9AA /* LSMetalView.m in Sources */,
 				E33CF684249328C9002C1776 /* LSVideoCaptureConfiguration.m in Sources */,
+				E332031625076C0600C1F297 /* GLESUtils.m in Sources */,
 				E3106C822461AEB000A4E1C4 /* LSUdp.m in Sources */,
 				E33CF68A2493533C002C1776 /* LSAudioCaptureConfiguration.m in Sources */,
 				E33CF6B1249656BA002C1776 /* LSAudioEncoder.m in Sources */,

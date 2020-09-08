@@ -72,6 +72,18 @@ static const Vertex cubeVertexData[] =
     return self;
 }
 
+- (void)dealloc {
+    NSLog(@"%s", __func__);
+    //需要清空缓冲区 不然会有内存泄漏
+    CVMetalTextureCacheFlush(_textureCache, 0);
+    if (_textureY) {
+        _textureY = NULL;
+    }
+    if (_textureCrCb) {
+        _textureCrCb = NULL;
+    }
+}
+
 #pragma - 开始渲染
 - (void)startRenderWithSamplerBuffer:(CVPixelBufferRef)pixelBuffer {
     
