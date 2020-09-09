@@ -31,6 +31,9 @@
  视频解码：LSVideoDecoder
  音频解码：LSAudioDecoder
  
+ OpenGL ES渲染：LSOpenGLESView
+ Metal渲染：LSMetalView
+ 
  
  
  
