@@ -290,7 +290,7 @@
 - (void)handleCaptureSessionInterruption:(NSNotification *)noti {
     NSString *reasonString = nil;
     NSNumber *reason = noti.userInfo[AVCaptureSessionInterruptionReasonKey];
-    if (reason) {
+    if ([reason intValue]) {
         switch (reason.intValue) {
             case AVCaptureSessionInterruptionReasonVideoDeviceNotAvailableInBackground:
                 reasonString = @"VideoDeviceNotAvailableInBackground";

@@ -196,12 +196,12 @@ NSString * const naluTypesStrings[] =
     frame[2] = *(pNaluSize + 1);
     frame[3] = *(pNaluSize);
     
-    CVPixelBufferRef pixelBuffer = NULL;
+//    CVPixelBufferRef pixelBuffer = NULL;
     
     switch (nalu_type) {
         case 0x05://I
             if ([self initVideoDecoder]) {
-                pixelBuffer = [self decodeFrame:frame size:frameSize];
+                [self decodeFrame:frame size:frameSize];
             }
             break;
         case 0x07://SPS
@@ -228,7 +228,7 @@ NSString * const naluTypesStrings[] =
             
         default://B 或 P
             if ([self initVideoDecoder]) {
-                pixelBuffer = [self decodeFrame:frame size:frameSize];
+                [self decodeFrame:frame size:frameSize];
             }
             break;
             break;

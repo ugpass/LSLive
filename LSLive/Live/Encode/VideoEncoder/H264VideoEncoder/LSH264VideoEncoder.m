@@ -99,6 +99,7 @@
     int bitRate = width * height * 3 * 4 * 8;
     CFNumberRef bitRateRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRate);
     status = VTSessionSetProperty(mVTCompressionSessionRef, kVTCompressionPropertyKey_AverageBitRate, bitRateRef);
+    CFRelease(bitRateRef);
     if (status != noErr) {
         NSLog(@"initVideoToolBox:: kVTCompressionPropertyKey_AverageBitRate error= %d", (int)status);
         return;
@@ -132,6 +133,7 @@
     int fps = 25;
     CFNumberRef  fpsRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &fps);
     status =  VTSessionSetProperty(mVTCompressionSessionRef, kVTCompressionPropertyKey_ExpectedFrameRate, fpsRef);
+    CFRelease(fpsRef);
     if (status != noErr) {
         NSLog(@"initVideoToolBox:: kVTCompressionPropertyKey_ExpectedFrameRate error= %d", (int)status);
         return;

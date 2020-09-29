@@ -68,10 +68,6 @@
 - (void)startRenderWithSamplerBuffer:(CVPixelBufferRef)sampleBuffer {
     bufferWidth = (int) CVPixelBufferGetWidth(sampleBuffer);
     bufferHeight = (int) CVPixelBufferGetHeight(sampleBuffer);
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSLog(@"%d-%d", bufferWidth, bufferHeight);
-    });
     
     [EAGLContext setCurrentContext:self.context];
     
